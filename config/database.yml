@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  host: 127.0.0.1
+  database: hcl_code_dev1
+  username: mohan
+  password:
+  encoding: unicode

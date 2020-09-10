@@ -3,22 +3,30 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+Follow below steps to setup an application:
 
-* Ruby version
+* Create database => rails db:create
 
-* System dependencies
+* Do migration => rails db:migrate
 
-* Configuration
+* Seed question, mapping, role => rails db:seed
 
-* Database creation
+Follow below steps to run an application
 
-* Database initialization
+* Go to this Heroku url https://peaceful-anchorage-90363.herokuapp.com/
 
-* How to run the test suite
+* Default it will show all questions in index page.
 
-* Services (job queues, cache servers, search engines, etc.)
+* Click on 'Add question' button
 
-* Deployment instructions
+* Give input details question, role & mapping
 
-* ...
+* Click on 'Create question' button
+
+Now you see the created new question in index page.
+
+* Click on 'Edit' button, You can update the details.
+
+Now you can see the updated question in index page.
+
+* When click 'Delete' button, Question can delte from index page.

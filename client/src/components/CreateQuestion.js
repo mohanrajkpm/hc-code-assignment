@@ -62,7 +62,7 @@ export default class CreateQuestion extends React.Component {
       headers: { 'Content-Type': 'application/json' },
     }).then((response) => {
       alert('Question created successfully');
-      // location.href = '/';
+      window.location.href = '/';
     });
   }
 

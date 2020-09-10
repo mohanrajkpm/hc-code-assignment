@@ -2,10 +2,11 @@
   "name": "hc_test",
   "private": true,
   "dependencies": {
-    "@rails/ujs": "^6.0.0",
-    "turbolinks": "^5.2.0",
+    "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
-    "@rails/actioncable": "^6.0.0"
+    "@rails/ujs": "^6.0.0",
+    "@rails/webpacker": "4.3.0",
+    "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",
   "engines": {
@@ -17,5 +18,8 @@
     "deploy": "cp -a client/build/. public/",
     "postinstall": "npm run build && npm run deploy && echo 'Client built' ",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.0"
   }
 }

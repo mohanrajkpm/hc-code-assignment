@@ -72,6 +72,7 @@ export default class UpdateQuestion extends React.Component {
   };
 
   updateQuestionRequest = (event) => {
+    event.preventDefault();
     fetch(`/api/v1/questions/${JSON.stringify(Number(this.props.match.params.id))
     }`, {
       method: 'put',

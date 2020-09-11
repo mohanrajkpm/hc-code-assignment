@@ -55,6 +55,7 @@ export default class CreateQuestion extends React.Component {
   };
 
   createQuestionRequest = (event) => {
+    event.preventDefault();
     console.log('this.state', this.state);
     fetch('/api/v1/questions', {
       method: 'post',

@@ -9,9 +9,14 @@ export default class QuestionDetails extends React.Component {
   componentDidMount() {
     const { match: { params: { id } } } = this.props;
     fetch(`/api/v1/questions/${id}`)
-      .then((response) => response.json())
-      .then((question) => this.setState({ question }));
-  }
+      .then(response => response.json())
+      .then(question => {
+          this.setState({ question })
+      })
+      .catch(err => {
+          this.setState({ questions: 'API Failed' })
+      })
+  };
 
   render() {
     const { question } = this.state;

@@ -64,7 +64,6 @@ module Api
 			def find_question
 				@question = Question.find(params[:id])
 			end
-
 			#permit question params
 			def question_params
 				params.require(:question).permit(:name, :role_id, :mapping_id)

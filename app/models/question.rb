@@ -4,6 +4,6 @@ class Question < ApplicationRecord
 
 	delegate :name, to: :role, prefix: :role
   delegate :name, to: :mapping, prefix: :mapping
- 
+
   paginates_per 10
 end

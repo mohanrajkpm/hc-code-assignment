@@ -1,9 +1,10 @@
 class Question < ApplicationRecord
-	belongs_to :role
-	belongs_to :mapping
-
-	delegate :name, to: :role, prefix: :role
+  # Add relationship
+  belongs_to :role
+  belongs_to :mapping
+  # Add delegation
+  delegate :name, to: :role, prefix: :role
   delegate :name, to: :mapping, prefix: :mapping
-
+  # Per page pagination
   paginates_per 10
 end

@@ -1,3 +1,4 @@
 class Mapping < ApplicationRecord
-	has_many :questions
+  # Add question relation
+  has_many :questions
 end

@@ -1,3 +1,4 @@
 class Role < ApplicationRecord
-	has_many :questions
+  #question added relation
+  has_many :questions
 end

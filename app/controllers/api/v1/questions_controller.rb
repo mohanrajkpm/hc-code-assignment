@@ -3,6 +3,7 @@ module Api
 		class QuestionsController < ApplicationController
 			#skip authentication
 			skip_before_action :verify_authenticity_token
+			#find question before action
 			before_action :find_question, only: %i[show destroy update]
 			# render all questions
 			def index

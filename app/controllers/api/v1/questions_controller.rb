@@ -11,7 +11,6 @@ module Api
 														.page(params[:page])
 				# render json: questions
 				render json: { questions: questions, question_count: questions.count, success: true }, status: :ok
-
 		  end
 
 			# create question
